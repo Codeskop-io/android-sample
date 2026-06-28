@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="Codeskop Sample"
+        android:theme="@android:style/Theme.Material.Light">
+
+        <!-- Zero-config auto-init demo (docs/07 §7.2). Replace with a real test key. -->
+        <meta-data
+            android:name="com.codeskop.sdk.API_KEY"
+            android:value="cs_test_pk_replace_me" />
+        <meta-data
+            android:name="com.codeskop.sdk.ENDPOINT"
+            android:value="http://10.0.2.2:8080" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
